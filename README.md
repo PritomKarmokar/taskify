@@ -17,13 +17,13 @@ A simple Task Management API built using Django REST Framework. This API allows 
 
 ### Clone the Repository  
 ```bash
-    git clone git@github.com:PritomKarmokar/taskify.git
-    cd taskify-api
+git clone git@github.com:PritomKarmokar/taskify.git
+cd taskify-api
 ```
 ### Copy .env.example to .env
 Before running the project, copy the `.env.example` file and update it with your database credentials:
 ```bash
-    cp .env.example .env
+cp .env.example .env
 ```
 📌 Make sure to update the `.env` file with the correct values! 
 ```bash
