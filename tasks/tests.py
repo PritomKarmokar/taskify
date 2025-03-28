@@ -16,9 +16,6 @@ class BaseViewTest(APITestCase):
     def create_task(title="", description="", task_status="", due_date=None):
         if title != "" and description != "" and task_status != "":
 
-            if not due_date:
-                due_date = timezone.now() + timedelta(days=1)
-
             Task.objects.create(
                 title=title,
                 description=description,
