@@ -89,15 +89,15 @@ cp .env.example .env
 ### Build the Docker container:
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 ### Run database migrations:
 ```bash
-docker-compose run django-web python manage.py migrate
+docker compose run django-web python manage.py migrate
 ```
 ### Run database migrations:
 ```bash
-docker-compose run django-web python manage.py createsuperuser
+docker compose run django-web python manage.py createsuperuser
 ```
 
 The API will be available at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
@@ -114,7 +114,7 @@ python manage.py test
 ### Run Tests with Docker
 If running inside a Docker container, use:
 ```bash
-docker-compose run django-web python manage.py test
+docker compose run django-web python manage.py test
 ```
 
 ## 🚀 Feel Free to Play Around!
