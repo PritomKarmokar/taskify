@@ -81,6 +81,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'taskify.wsgi.application'
 
+REST_FRAMEWORK = {
+    'DATETIME_FORMAT': "%d-%m-%Y %H:%M:%S",  # Output format
+    'DATETIME_INPUT_FORMATS': [              # Acceptable input formats
+        "%d-%m-%Y %H:%M:%S",  # 27-03-2025 14:30:00
+        "%d-%m-%Y",           # 27-03-2025 (without time)
+        "%Y-%m-%dT%H:%M:%SZ", # ISO 8601
+        "%Y-%m-%dT%H:%M:%S.%fZ",
+    ],
+}
+
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
