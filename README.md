@@ -42,28 +42,28 @@ DB_PORT=5432
 
 ### Create & Activate a Virtual Environment  
 ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 ### Install Dependencies 
 ```bash
-    pip install -r requirements.txt 
+pip install -r requirements.txt 
 ```
 
 ### Set Up the Database
 ```bash
-    python manage.py migrate
+python manage.py migrate
 ```
 
 ### Create a Superuser (Optional)
 ```bash
-    python manage.py createsuperuser
+python manage.py createsuperuser
 ```
 
 ### Run the Development Server
 ```bash
-    python manage.py runserver
+python manage.py runserver
 ```
 The API will be available at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
@@ -82,22 +82,22 @@ The API will be available at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 If you want to run this project inside a Docker container, follow these steps:
 ### Copy .env.example to .env
 ```bash
-    cp .env.example .env
+cp .env.example .env
 ```
 📌 Update your .env file to set database credentials and any other required variables.
 
 ### Build the Docker container:
 
 ```bash
-    docker-compose up --build
+docker-compose up --build
 ```
 ### Run database migrations:
 ```bash
-    docker-compose run django-web python manage.py migrate
+docker-compose run django-web python manage.py migrate
 ```
 ### Run database migrations:
 ```bash
-    docker-compose run django-web python manage.py createsuperuser
+docker-compose run django-web python manage.py createsuperuser
 ```
 
 The API will be available at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
@@ -108,13 +108,13 @@ This project includes unit tests to ensure API functionality.
 To execute all test cases, run the following command:
 
 ```bash
-    python manage.py test
+python manage.py test
 ```
 
 ### Run Tests with Docker
 If running inside a Docker container, use:
 ```bash
-    docker-compose run django-web python manage.py test
+docker-compose run django-web python manage.py test
 ```
 
 ## 🚀 Feel Free to Play Around!
