@@ -1,4 +1,3 @@
-from drf_yasg.utils import swagger_auto_schema
 from rest_framework import status
 from rest_framework.request import Request
 from rest_framework.response import Response
@@ -30,7 +29,6 @@ class TaskListAPIView(APIView):
 class TaskCreateAPIView(APIView):
     serializer_class = TaskSerializer
 
-    @swagger_auto_schema(request_body=TaskSerializer)
     def post(self, request: Request) -> Response:
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():

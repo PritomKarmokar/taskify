@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'tasks',
     # Third-party things
     'rest_framework',
-    'drf_yasg',
 ]
 
 MIDDLEWARE = [
