@@ -35,7 +35,7 @@ ALLOWED_HOSTS=127.0.0.1,localhost
 DB_NAME=todo_db
 DB_USER=postgres
 DB_PASSWORD=postgres
-# Change 'DB_HOST' to 'db' when running docker
+# Change 'DB_HOST' value to 'db' when running docker
 DB_HOST=localhost
 DB_PORT=5432
 ```
