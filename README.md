@@ -95,7 +95,7 @@ docker compose up --build
 ```bash
 docker compose run django-web python manage.py migrate
 ```
-### Run database migrations:
+### Create Superuser:
 ```bash
 docker compose run django-web python manage.py createsuperuser
 ```
